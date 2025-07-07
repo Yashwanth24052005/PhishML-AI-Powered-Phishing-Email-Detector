@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>PhishML - Email Classifier</title></head>
+<body>
+    <h1>PhishML - Detect Phishing Emails</h1>
+    <form method="post">
+        <textarea name="email" rows="10" cols="60" placeholder="Paste email content here..."></textarea><br>
+        <input type="submit" value="Check Email">
+    </form>
+    {% if prediction %}
+    <h2>Result: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
